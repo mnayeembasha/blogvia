@@ -1,6 +1,7 @@
 import express from "express";
 import { PORT } from "./config";
 import cors from "cors";
+import {type Request,type Response} from "express";
 import cookieParser from "cookie-parser";
 import { connectDB } from "./lib/db";
 import authRoutes from "./routes/auth.routes";
