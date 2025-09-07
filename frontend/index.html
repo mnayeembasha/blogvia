@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Blogvia - Your Gateway to Creative Writing</title>
+    <meta name="title" content="BlogVia - Your Gateway to Creative Writing" />
+    <meta name="description" content="Create, share, and discover amazing blogs with BlogVia. A modern platform for writers to express their thoughts and connect with readers worldwide." />
+    <meta name="keywords" content="blog, blogging platform, writing, creative writing, articles, stories, content creation, BlogVia" />
+    <meta name="author" content="Nayeem Basha" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+
+    <!-- Theme Color & Icons -->
+    <!-- <link rel="icon" type="image/icon" href="/logo.png" /> -->
+    <link rel="icon" type="image/svg+xml" href="/favicon2.svg" />
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#fd7c15" />
+    <meta name="msapplication-TileColor" content="#fd7c15" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://blogvia.com/" />
+    <meta property="og:title" content="BlogVia - Your Gateway to Creative Writing" />
+    <meta property="og:description" content="Create, share, and discover amazing blogs with BlogVia. A modern platform for writers to express their thoughts and connect with readers worldwide." />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:site_name" content="BlogVia" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://blogvia.com/" />
+    <meta property="twitter:title" content="BlogVia - Your Gateway to Creative Writing" />
+    <meta property="twitter:description" content="Create, share, and discover amazing blogs with BlogVia. A modern platform for writers to express their thoughts and connect with readers worldwide." />
+    <meta property="twitter:image" content="/twitter-image.png" />
+
+    <!-- Prevent theme flash -->
+    <script>
+      (function() {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else if (theme === 'light') {
+          document.documentElement.classList.add('light');
+        } else {
+          // Default to system preference
+          if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.add('light');
+          }
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
